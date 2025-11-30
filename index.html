@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我们的博客 - 记录技术与生活</title>
+  <meta name="description" content="一个专注于技术分享的博客" />
+  <meta name="keywords" content="blog, 博客, 技术" />
+  <meta name="author" content="Leamon Lee" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="我们的博客 - 记录技术与生活" />
+  <meta property="og:description" content="一个专注于技术分享的博客" />
+  <meta property="og:url" content="" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="我们的博客 - 记录技术与生活" />
+  <meta property="twitter:description" content="一个专注于技术分享的博客" />
+
+  <link rel="stylesheet" href="./src/dtheme/dstyle.css" />
+  <link rel="icon" type="image/x-icon" href="" />
+</head>
+<body>
+  <!-- 网站头部 -->
+  <header class="header">
+    <div class="header-content">
+      <h1>📖 我们的博客</h1>
+      <p class="header-subtitle">记录技术与生活</p>
+
+      <nav class="main-nav" role="navigation" aria-label="主导航">
+        <ul>
+          <li><a href="./index.html" class="active" aria-current="page">首页</a></li>
+          
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#contact">联系方式</a></li>
+        </ul>
+      </nav>
+
+      <div class="tools" role="toolbar" aria-label="工具栏">
+        <div class="search-container">
+          <input type="search" id="searchInput" placeholder="🔍 搜索文章..." aria-label="搜索文章" />
+        </div>
+        <button id="darkModeToggle" class="theme-toggle" aria-label="切换夜间模式">
+          🌙 夜间模式
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 分类筛选器 -->
+  <section class="category-filters" role="group" aria-label="文章分类筛选">
+    <h2 class="visually-hidden">文章分类</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all" aria-pressed="true">全部文章</button>
+      <button class="filter-btn" data-category="frontend" aria-pressed="false">前端开发</button>
+      <button class="filter-btn" data-category="backend" aria-pressed="false">后端技术</button>
+      <button class="filter-btn" data-category="life" aria-pressed="false">生活随笔</button>
+    </div>
+  </section>
+
+  <!-- 博客文章列表 -->
+  <main class="blog-container">
+    <div class="blog-list" role="main" aria-label="文章列表">
+      
+      <article class="blog-card" data-category="frontend" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="blog-card-image">
+          <img src="./src/sample.jpg" alt="dochii-blog" loading="lazy" />
+        </div>
+        <div class="blog-card-content">
+          <header class="blog-card-header">
+            <h2 itemprop="headline">
+              <a href="./pages/dochii-blog.html" class="blog-link" itemprop="url">
+                dochii-blog
+              </a>
+            </h2>
+            <div class="blog-meta">
+              <time datetime="2025-12-01" itemprop="datePublished">2025年12月01日</time>
+              <span class="category-tag" data-category="frontend">前端开发</span>
+            </div>
+          </header>
+          <div class="blog-card-body">
+            <p itemprop="description">
+              暂无描述...
+            </p>
+          </div>
+          <footer class="blog-card-footer">
+            <div class="blog-stats">
+              <button class="like-btn" aria-label="点赞">
+                <span aria-hidden="true">👍</span> 赞
+              </button>
+              <span class="views" title="阅读量">
+                <span aria-hidden="true">👁️</span>
+                <span itemprop="interactionCount">0</span> 阅读
+              </span>
+            </div>
+          </footer>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- 网站页脚 -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>关于 DOCHII 博客</h3>
+        <p>一个专注于技术分享和生活记录的个人博客网站，与你一同探索编程世界和生活之美。</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>快速导航</h3>
+        <ul class="footer-links">
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./pages/dochii-blog.html">最新文章</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#contact">联系方式</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>分类标签</h3>
+        <div class="footer-tags">
+          <span class="tag">前端开发</span>
+          <span class="tag">后端技术</span>
+          <span class="tag">生活随笔</span>
+          <span class="tag">Python</span>
+          <span class="tag">Web开发</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 我们的团队博客</p>
+      <p class="footer-credit">Powered by HTML + CSS + JS</p>
+    </div>
+  </footer>
+
+  <!-- 回到顶部按钮 -->
+  <button id="backToTop" class="back-to-top" aria-label="回到顶部">
+    <span aria-hidden="true">⬆️</span>
+    <span class="sr-only">回到页面顶部</span>
+  </button>
+
+  <script src="./src/dtheme/dutils.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+blogs:
+- dochii-blog
+footer:
+  copyright: © {year} 我们的团队博客
+  powered_by: Powered by HTML + CSS + JS
+git:
+  repo_url: https://github.com/rongyicheng23-afk/blog
+info:
+  author: Leamon Lee
+  email: leamon@example.com
+  motto: 记录与分享
+  website_name: DOCHII Blog2
+path: ./
+theme:
+  script: ../src/dtheme/dutils.js
+  style: ../src/dtheme/dstyle.css

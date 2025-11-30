@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{site_title} - {site_subtitle}</title>
+  <meta name="description" content="{site_description}" />
+  <meta name="keywords" content="{site_keywords}" />
+  <meta name="author" content="{site_author}" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{site_title} - {site_subtitle}" />
+  <meta property="og:description" content="{site_description}" />
+  <meta property="og:url" content="{site_url}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="{site_title} - {site_subtitle}" />
+  <meta property="twitter:description" content="{site_description}" />
+
+  <link rel="stylesheet" href="{theme_style}" />
+  <link rel="icon" type="image/x-icon" href="{site_favicon}" />
+</head>
+<body>
+  <!-- 网站头部 -->
+  <header class="header">
+    <div class="header-content">
+      <h1>📖 {site_title}</h1>
+      <p class="header-subtitle">{site_subtitle}</p>
+
+      <nav class="main-nav" role="navigation" aria-label="主导航">
+        <ul>
+          <li><a href="./index.html" class="active" aria-current="page">首页</a></li>
+          {nav_links}
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#contact">联系方式</a></li>
+        </ul>
+      </nav>
+
+      <div class="tools" role="toolbar" aria-label="工具栏">
+        <div class="search-container">
+          <input type="search" id="searchInput" placeholder="🔍 搜索文章..." aria-label="搜索文章" />
+        </div>
+        <button id="darkModeToggle" class="theme-toggle" aria-label="切换夜间模式">
+          🌙 夜间模式
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 分类筛选器 -->
+  <section class="category-filters" role="group" aria-label="文章分类筛选">
+    <h2 class="visually-hidden">文章分类</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all" aria-pressed="true">全部文章</button>
+      <button class="filter-btn" data-category="frontend" aria-pressed="false">前端开发</button>
+      <button class="filter-btn" data-category="backend" aria-pressed="false">后端技术</button>
+      <button class="filter-btn" data-category="life" aria-pressed="false">生活随笔</button>
+    </div>
+  </section>
+
+  <!-- 博客文章列表 -->
+  <main class="blog-container">
+    <div class="blog-list" role="main" aria-label="文章列表">
+      {blog_cards}
+    </div>
+  </main>
+
+  <!-- 网站页脚 -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>关于 DOCHII 博客</h3>
+        <p>一个专注于技术分享和生活记录的个人博客网站，与你一同探索编程世界和生活之美。</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>快速导航</h3>
+        <ul class="footer-links">
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./pages/dochii-blog.html">最新文章</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#contact">联系方式</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>分类标签</h3>
+        <div class="footer-tags">
+          <span class="tag">前端开发</span>
+          <span class="tag">后端技术</span>
+          <span class="tag">生活随笔</span>
+          <span class="tag">Python</span>
+          <span class="tag">Web开发</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>{footer_copyright}</p>
+      <p class="footer-credit">{footer_powered_by}</p>
+    </div>
+  </footer>
+
+  <!-- 回到顶部按钮 -->
+  <button id="backToTop" class="back-to-top" aria-label="回到顶部">
+    <span aria-hidden="true">⬆️</span>
+    <span class="sr-only">回到页面顶部</span>
+  </button>
+
+  <script src="{theme_script}"></script>
+</body>
+</html>

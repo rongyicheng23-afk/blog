@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{blog_title} - {site_title}</title>
+  <meta name="description" content="{blog_description}" />
+  <meta name="keywords" content="{blog_keywords}" />
+  <meta name="author" content="{blog_author}" />
+  <link rel="stylesheet" href="{theme_style}" />
+</head>
+<body>
+  <!-- 顶部导航复用 -->
+  <header class="header">
+    <h1><a href="../index.html">📖 {site_title}</a></h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="./{blog_name}.html" class="active">文章</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 文章主体 -->
+  <main class="blog-container">
+    <h1>{blog_title}</h1>
+    <div class="blog-meta">
+       作者: {blog_author} | 日期: {blog_date} | ⏱ 阅读时间: {read_time} 分钟
+    </div>
+
+    <div class="blog-content">
+      {blog_content}
+    </div>
+
+    <div class="blog-footer">
+      <button class="like-btn">👍 点赞</button>
+      <p class="views">👁️ 阅读量: <span>{view_count}</span></p>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>{footer_copyright} | {footer_powered_by}</p>
+  </footer>
+
+  <button id="backToTop">⬆️</button>
+
+  <script src="{theme_script}"></script>
+</body>
+</html>
