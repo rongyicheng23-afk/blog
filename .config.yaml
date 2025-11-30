@@ -18,7 +18,7 @@ info:
   email: leamon@example.com
   motto: 记录与分享
   website_name: DOCHII Blog2
-path: ./
+path: ../
 theme:
   script: ../src/dtheme/dutils.js
   style: ../src/dtheme/dstyle.css
