@@ -5,12 +5,13 @@ blogs:
 - '2'
 - '3'
 - blog123
+- '6'
 footer:
   copyright: © {year} 我们的团队博客
   powered_by: Powered by HTML + CSS + JS
 git:
   repo_url: git@github.com:rongyicheng23-afk/blog.git
-  website_url: https://github.com/rongyicheng23-afk/blog
+  website_url: https://rongyicheng23-afk.github.io/blog
 info:
   author: Leamon Lee
   email: leamon@example.com
