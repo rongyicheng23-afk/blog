@@ -1,6 +1,7 @@
 blogs:
 - dochii-blog
 - '1243'
+- '1'
 footer:
   copyright: © {year} 我们的团队博客
   powered_by: Powered by HTML + CSS + JS
