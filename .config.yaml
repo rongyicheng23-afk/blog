@@ -4,6 +4,7 @@ blogs:
 - '1'
 - '2'
 - '3'
+- blog123
 footer:
   copyright: © {year} 我们的团队博客
   powered_by: Powered by HTML + CSS + JS
